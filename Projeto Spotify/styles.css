@@ -1,0 +1,273 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('./imagens/capa.png');
+    background-attachment: fixed;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(50deg, #ed008a98, #3d0196a2 );
+    background-attachment: fixed;
+}
+
+.bg-body-tertiary{
+    background-color: rgba(0,0,0,0.6) !important;
+}
+
+.nav-link{
+    color: white;
+}
+
+.carousel{
+    height: 100vh;
+}
+
+.carousel-inner{
+    height: 100%;
+    align-items: center !important;
+    vertical-align: center;
+    display: flex;
+}
+
+.carousel-item{
+    text-align: center;
+}
+
+.carousel-item h4{
+    text-align: center;
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.carousel-item > div{
+    display: flex ;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    margin: auto;
+}
+
+.carousel-item > div > a{
+    margin: 0 !important;
+    padding: 9px 12px 8px 12px !important;
+    font-size: 14px;
+    border-radius: 20px;
+    background-color: #7c25f8;
+    color: white !important;
+}
+
+.button-without-background{
+    margin: 0 !important;
+    padding: 9px 12px 8px 12px !important;
+    font-size: 14px;
+    border-radius: 20px;
+    color: white;
+    background-color: transparent !important;
+    text-decoration: none;
+    border: 1px solid white;
+}
+
+.carousel-item > div > a:nth-child(2):hover{
+    transition: 0.8s;
+    color: black !important;
+    background-color: white !important;
+    background-color: transparent;
+}
+
+.button-without-background img{
+    height: 20px;
+    margin-right: 4px;
+}
+
+.sectio1{
+    background-color: white;
+}
+
+.spotify-details{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: white;
+    margin: auto;
+}
+
+.album-cover{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 24px;
+    gap: 24px;
+    justify-content: end;
+}
+
+.album-cover img{
+    height: 220px;
+}
+.spotify-details-texts{
+    padding: 24px;
+}
+
+.spotify-details-texts h1, h4{
+    color: #6207e3;
+    font-weight: bold;
+}
+
+.spotify-details-texts p{
+    color: black;
+}
+
+.spotify-details-2{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.spotify-details-2-texts h1, p{
+    color: white;
+    width: 400px;
+}
+
+.spotify-details-2-texts h4{
+    color: #9bf0e1;
+}
+
+.iphone-imgs{
+    display: grid;
+    grid-template-columns: auto auto;
+    transform: rotate(30deg);
+    justify-content: center;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.iphone-imgs img{
+    height: 500px;
+}
+
+footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: black;
+    z-index: 20;
+    padding: 32px;
+}
+
+.footer-logo-box{
+    justify-content: center;
+}
+
+footer h2{
+   background-color: blu;
+   font-size: 16px;
+}
+
+footer div {
+   justify-content: center;
+}
+
+footer ul li{
+    color: white;
+    list-style-type: none;
+}
+
+footer div img{
+    height: 40px;
+}
+
+.footer-img-box{
+    margin: auto;
+}
+
+@media screen and (max-width: 990px){
+
+    .navbar-toggler {
+        border: 1px solid white;
+        outline: none;
+        padding: 0 6px 0 6px;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+        border: 2px solid yellow;
+    }
+
+    .navbar-toggler-icon{
+        background-image: url('./imagens/hamburger.png') !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .navbar-nav :nth-child(4){
+        display: none;
+    }
+
+    .carousel-item > div{
+        flex-direction: column;
+    }
+
+    .carousel-item > div{
+        height: 80px;
+    }
+
+    .carousel-item > div > a{
+        width: 300px; 
+        padding: 4px 0 4px 0 !important;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .mobile-button-style-change{
+        font-size: 20px;
+    }
+
+    .spotify-details{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .album-cover{
+        justify-content: center;
+        grid-template-columns: auto;
+    }
+
+    .spotify-details-2-texts h1, p{
+        width: 200px;
+    }
+
+    .album-cover img{
+        height: 100%;
+    }
+
+    .iphone-imgs img{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .spotify-details-2{
+        grid-template-columns: auto;
+        justify-content: center;
+        margin: 0;
+        gap: 0;
+    }
+
+    .iphone-imgs{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .iphone-imgs img{
+        height: 600px;
+    }
+
+    footer{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+}
+
