@@ -28,7 +28,7 @@ To use this project locally, follow these steps:
 
 ## Usage
 
-The project can be used as a template or starting point for building front-end web applications with Spotify-inspired design and functionality. You can customize the design, layout, and content to suit your specific requirements. The responsive layout makes it suitable for different screen sizes, and the Bootstrap 5 framework provides a wide range of components and utilities to help you create modern and responsive web interfaces with smooth music playback and search functionality.
+The project can be used as a template or starting point for building front-end web applications with Spotify-inspired design and functionality. You can customize the design, layout, and content to suit your specific requirements. The responsive layout makes it suitable for different screen sizes, and the Bootstrap 5 framework provides a wide range of components and utilities to help you create modern and responsive web interfaces.
 
 ## Contributing
 
